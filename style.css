@@ -1,3 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    
+    font-size: 3rem;
+}
+
+.header{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-size: 18pt;
+    text-align: left;
+    padding:10px;
+}
+.header-details{
+    float:left;
+    background-color:#6C63FF;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.header-hero{
+    width: 25%;
+    height:25%;
+    float:inline-end;
+}
+
 body{
-    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.highlight{
+    color:#6C63FF;
+    font-weight: bolder;
+}
+.accordian {
+    max-width: 1200px;
+  }
+.accordian .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordian .contentBx .label{
+    /* text-align: center; */
+    position: relative;
+    padding:5px;
+    background:#6C63FF;
+    color:white;
+    cursor:pointer;
+    border-radius: 1rem;
+    align-items: center;
+}
+.accordian .contentBx .label::before{
+    content:'+';
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translateY(-50%);
+    font-size:1.5em;
+}
+.accordian .contentBx.active .label::before{
+    content:'-';
+}
+.accordian .contentBx .content{
+    position:relative;
+    background:white;
+    height:0px;
+    overflow:hidden;
+    transition:0.5s;
+    overflow-y:auto;
+}
+.accordian .contentBx.active .content{
+height:150px;
+padding:10px;
+}
+h2{
+    text-align: center;
+}
+
+ul {
+    text-align: left;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+  }
+.cross:before{
+    content: '☒'; 
+    color:red;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    
+   }
+.tick:before{
+    content: '☑'; 
+    color:green;
+    padding-left: 1rem;
+    padding-right: .5rem;
+   }
+.alignment-left{
+    float: left;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+background-color: #D1D5DB;
+}
+
+.alignment-right{
+    float: right;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+background-color: #D1D5DB;
+}
+
+
+
+.comparison{
+padding-top:2rem;
+
 }
